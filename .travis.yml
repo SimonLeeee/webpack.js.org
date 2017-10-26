@@ -1,12 +1,11 @@
 branches:
   only:
-    - master
-    - develop
+    - cn
 language: node_js
 node_js:
   - "6"
 script:
-  - bash ./scripts/deploy.sh
+  - bash ./src/scripts/deploy.sh
 sudo: required
 install:
   - npm install --global yarn
